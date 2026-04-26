@@ -24,3 +24,11 @@ const server = http.createServer((req, res) => {
 
 server.listen(3000);
 
+const { Server } = require('socket.io'); 
+const io = new Server(server);
+
+io.on('connection', async (socket) => {
+    console.log('User connected. id - ' + socket.id);
+  io.on('connection', (socket) => {
+    socket.emit('all_massages', []);
+});
