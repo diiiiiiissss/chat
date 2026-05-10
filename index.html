@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cofa dyra</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <div id="d">
-       <h1 class="h">cofa dyra</h1>
-       </div>
-       <ul id="messages">
-        <li>1</li>
-        <li>2</li>
-       </ul>
-       <form id="f">
-        <input type="text" id="input" placeholder="Enter message...">
-        <input type="submit" class="submit" value="Send">
-       </form>
+            <h1 class="h">cofa dyra</h1>
+            <button onclick="changeNickname()">Change nickname</button>
+        </div>
+
+        <ul id="messages">
+            <li class="two">kekareky</li>
+            <li class="one">676767</li>
+        </ul>
+
+        <form id="f">
+            <input type="text" id="input" placeholder="Enter message...">
+            <input type="submit" class="submit" value="Send">
+        </form>
     </main>
 </body>
+<script src="https://cdn.socket.io/4.8.3/socket.io.min.js"
+    integrity="sha384-kzavj5fiMwLKzzD1f8S7TeoVIEi7uKHvbTA3ueZkrzYq75pNQUiUi6Dy98Q3fxb0"
+    crossorigin="anonymous"></script>
 <script src="script.js"></script>
+
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cofa dyra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main> 
+        <header class="header">
+            <h1>RoboChat</h1>
+        </header>
+        <form class="register-form" id="register-form">
+            <div class="register-form_container">
+                <label for="login" class="register-form_label">Логин</label>
+                <input type="text" id="login" name="login" class="register-form_input" placeholder="Логин">
+
+                <label for="password" class="register-form_label">Пароль</label>
+                <input type="password" id="password" name="password" class="register-form_input" placeholder="Пароль">
+               
+                <label for="passwordRepeat" class="register-form_label">Повторите пароль</label>
+                <input type="password" id="passwordRepeat" name="passwordRepeat" class="register-form_input" placeholder="Повторите пароль">
+                <button type="submit" class="register-form_button">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+<script src="https://cdn.socket.io/4.8.3/socket.io.min.js"
+    integrity="sha384-kzavj5fiMwLKzzD1f8S7TeoVIEi7uKHvbTA3ueZkrzYq75pNQUiUi6Dy98Q3fxb0"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>

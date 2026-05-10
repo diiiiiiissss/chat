@@ -2,29 +2,55 @@
     background-color: blue;
     text-align: center;
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 10;
 }
 
+/* чат список */
+#messages {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 6rem 0 6rem 0 !important;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+
+    align-items: flex-start; /* 🔥 ВАЖНО */
+}
+
+#messages li {
+    display: block !important;
+    max-width: 60%;
+
+    background: lightblue;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+
+    font-size: 1.5rem;
+}
+
+/* input поле */
 #input {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: calc(100% - 5rem);
     height: 5rem;
     background-color: blue;
     border-top: 1px solid black;
-    display: flex;
-    align-items: center;
+    display: block;
     padding: 0 1rem;
     box-sizing: border-box;
 }
 
+/* кнопка отправки */
 .submit {
     position: fixed;
     bottom: 0;
@@ -34,4 +60,60 @@
     background-color: blue;
     border-top: 1px solid black;
     border-left: 1px solid black;
+    cursor: pointer;
+}
+
+body{
+    margin: 0;
+   display: flex;
+   justify-content: center; 
+   align-items: center;
+   min-height: 100vh;
+   background-color: #f0f0f0;
+   font-family: sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    color: #1a1aff;
+}
+
+.register-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.register-form_container {
+    background-color: #1a1aff;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 320px;
+}
+
+.register-form_label {
+    color: white;
+    font-size: 14px;
+}
+
+.register-form_input {
+    width: 100%;
+    padding: 10px;
+     border: none;
+    border-radius: 5px;
+   box-sizing: border-box;
+}
+
+.register-form_button {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-weight: bold;
 }
